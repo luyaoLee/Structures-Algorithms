@@ -21,7 +21,7 @@ class Deque {
   }
   removeBack() {
     if (this.isEmpty()) return
-    const back = this.items[this.count]
+    const back = this.items[this.count - 1]
     this.count--
     delete this.items[this.count]
     return back
@@ -55,6 +55,7 @@ class Deque {
   }
 }
 
+module.exports = Deque
 
 // const deque = new Deque()
 // console.log(deque.isEmpty())
