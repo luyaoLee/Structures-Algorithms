@@ -30,7 +30,7 @@ class LinkedList {
   }
   // 在任意位置插入节点
   insert(element, index) {
-    if (index < 0 || index >= this.count) return false
+    if (index < 0 || index > this.count) return false
     let current = this.head
     const node = new Node(element)
     if (index === 0) {
@@ -109,10 +109,13 @@ class LinkedList {
   }
 }
 
-const link = new LinkedList()
+module.exports = LinkedList
 
-link.push('head')
-link.push('neck')
-link.push('belly')
+// const link = new LinkedList()
 
-console.log(link.toString())
+
+// link.push('head')
+// link.push('neck')
+// link.push('belly')
+
+// console.log(link.toString())
