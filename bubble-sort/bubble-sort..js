@@ -18,6 +18,6 @@ function bubbleSort(array, compareFn = defaultCompare) {
   return copyArray
 }
 
-const arr = [34,1,5,21,76,2]
+const arr = [34, 1, 5, 21, 76, 2]
 
 console.log(bubbleSort(arr))

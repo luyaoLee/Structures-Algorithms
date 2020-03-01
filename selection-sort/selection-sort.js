@@ -13,6 +13,7 @@ function selectionSort(array, compareFn = defaultCompare) {
   for (let i = 0; i < length - 1; i++) {
     let indexMin = i
     for (let j = i; j < length; j++) {
+      // 每次都是把未排好序的开始位置作为最小项，往后依项比较，如果遇见比它小的，那么把这个较小值的index赋值给indexMin
       if (compareFn(copyArr[indexMin], copyArr[j]) === Compare.BIGGER_THAN) {
         indexMin = j
       }
